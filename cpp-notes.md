@@ -11,6 +11,7 @@ Ha nem írunk másolókonstruktort, akkor bitenkénti másolásról másnéven *
 
 ## Note - Tagváltozó inicializálás
 Az inicializálás és az ertékadás C++-ban megkülönböztetjük.
+
 **Inicializálás:**
 ```cpp
 int i = 0; //konstruktorhívás
