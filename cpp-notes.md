@@ -25,3 +25,5 @@ i = 0; //értékadás
 Point p; //konstruktorhívás
 p = 2; //értékadás
 ```
+## Note - Statikus osztályváltozók
+Elmondhatjuk, hogy a statikus tagváltozókat akkor célszerű használni, ha az osztály minden objektumára közös változóra van szükség.
