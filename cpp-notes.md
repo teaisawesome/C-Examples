@@ -27,3 +27,5 @@ p = 2; //értékadás
 ```
 ## Note - Statikus osztályváltozók
 Elmondhatjuk, hogy a statikus tagváltozókat akkor célszerű használni, ha az osztály minden objektumára közös változóra van szükség.
+## Const - nem Const konverzió
+Szabály: **Nem constans konvertálható constansá, fordítva nem!** Ha constanst akarunk konvertálni akkor hibák kapunk. Ha belegondolunk akkor egy nem constans változó megváltoztathatja az objektum állapotát de mi pont ezt akartuk elkerülni a constans definícióval.
