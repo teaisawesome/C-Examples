@@ -39,3 +39,70 @@ int main()
    
    a = b; // error: nem tudja kezelni a default assignment operátor a non-static ref miatt ezért sajátot kell, hogy írjunk!
 }
+
+/* --- TEMPLATES ---*/
+// Example program
+#include <iostream>
+#include <string>
+
+template <class C>
+class A
+{
+  private:
+    C x, y;
+  public:
+    A(C x1, C y1) :  x(x1), y(y1)
+    {
+        std::cout << __PRETTY_FUNCTION__ << std::endl;
+    }
+    
+    friend std::ostream& operator<<(std::ostream& os, const A<C>& a)
+    {
+        os << a.x << " " << a.y << std::endl;
+    
+        return os;
+    }
+    
+    A(const A& a) : x(a.x), y(a.y)
+    {
+        std::cout << __PRETTY_FUNCTION__ << std::endl;
+    }
+    
+    A& operator=(const A& a)
+    {
+        this->x = a.x;
+        this->y = a.y;
+         std::cout << __PRETTY_FUNCTION__ << std::endl;
+        
+        
+        return *this;
+    }
+};
+
+
+template <typename T>
+
+
+void swap(T &t1, T &t2)
+{
+    T temp = t1;
+    t1 = t2;
+    t2 = temp;
+}
+
+
+int main()
+{
+      double a = 5.1; double b = 0.10;
+      std::cout << a << " " << b << std::endl;
+      swap(a, b);
+      std::cout << a << " " << b << std::endl;
+      
+      A<int> c(1, 2);
+      A<int> d(10, 5);
+      
+      A<int> e = c;
+      
+      c = d;
+      
+}
