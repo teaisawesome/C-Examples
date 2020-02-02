@@ -207,4 +207,8 @@ int main()
       
       c = getback(c); // move assignment fog lefutni -> A<C>& A<C>::operator=(A<C>&&) [with C = int]
 }
-
+// operator<< overloading - stream overloading
+inline std::ostream& operator<<(std::ostream& os, const Enemy& e)
+{
+   return os << e.x << " " << e.y;
+}
