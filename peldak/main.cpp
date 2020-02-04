@@ -217,5 +217,5 @@ inline std::ostream& operator<<(std::ostream& os, const Enemy& e)
 // Questions ------ ***
 //Hat volt a kis programja abba voltak A B osztaly bennr virtualis meg nem virtualis fuggvenyek meg egy 2 attributum az egyik statikus
 //Volt copy konstruktor, volt szo streamekrol std namespace, virtualis destruktor, upcasting downcasting
-//Volt copy konstruktor, volt szo streamekrol std namespace, virtualis destruktor, upcasting downcasting
+// operator<< túlterhelés
 //STL vektor, iteratorok, ragebase.loop, inline, this pointer, const
